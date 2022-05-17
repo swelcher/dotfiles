@@ -22,7 +22,7 @@ set shiftwidth=4
 set noexpandtab
 set hidden
 set wildmenu
-set nohlsearch
+set hlsearch
 set ignorecase
 set smartcase
 set backspace=indent,eol,start
@@ -57,7 +57,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'dense-analysis/ale'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'tpope/vim-endwise'
 call plug#end()
 
 colorscheme gruvbox
@@ -74,4 +74,16 @@ nnoremap <leader>w :wincmd w<CR>
 nnoremap <leader>r :wincmd r<CR>
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>s :Rg<CR>
-nnoremap <leader>q <C-W>j
+nnoremap <leader>q :wincmd h<CR>
+nnoremap <leader>g :G
+
+command Gst Git status
+command Ga Git add
+command Gp Git push
+command Gcmsg git commit -m
+command Gcb Git checkout -b
+command Gcm Git checkout master
+command Gco Git checkout
+command Gd Git checkout --
+command Gl Git pull
+
