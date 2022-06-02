@@ -28,3 +28,18 @@ alias gd="git checkout --"
 alias gcm="git checkout master"
 alias gco="git checkout "
 alias gl="git pull"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+function gcm {
+	for x in $(git branch); do
+		if [[ "$x" == "master" ]] || [[ "$x" == "main" ]] then
+			git checkout $x
+		fi
+	done
+}
+
+function gpsup {
+	git push --set-upstream origin $(git branch --show-current)
+}
