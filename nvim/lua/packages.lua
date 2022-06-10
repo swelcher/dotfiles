@@ -1,7 +1,3 @@
--- Credit to https://github.com/tjdevries 
--- https://github.com/hrsh7th
--- https://github.com/rafamadriz
-
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use 'preservim/nerdtree'
@@ -19,14 +15,13 @@ require('packer').startup(function()
 	use 'hrsh7th/cmp-nvim-lua'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use "onsails/lspkind-nvim"
+	use "rafamadriz/friendly-snippets"
 	use {
 		'hrsh7th/nvim-cmp',
 		config = function() require('config/cmp') end,
 
 	}
 	use 'saadparwaiz1/cmp_luasnip'
-	-- LuaSnip configs - https://github.com/rafamadriz/friendly-snippets
-	--
 	use {
 		'L3MON4D3/LuaSnip',
 		after = 'nvim-cmp',
