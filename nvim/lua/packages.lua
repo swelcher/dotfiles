@@ -15,7 +15,9 @@ require('packer').startup(function()
 	use 'hrsh7th/cmp-nvim-lua'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use "onsails/lspkind-nvim"
-	use "rafamadriz/friendly-snippets"
+	use 'rafamadriz/friendly-snippets'
+	use 'nvim-lua/plenary.nvim'
+	use 'ThePrimeagen/harpoon'
 	use {
 		'hrsh7th/nvim-cmp',
 		config = function() require('config/cmp') end,
@@ -25,8 +27,8 @@ require('packer').startup(function()
 	use {
 		'L3MON4D3/LuaSnip',
 		after = 'nvim-cmp',
-		config = function() require('config/luasnip/snippets') 
-			require("luasnip.loaders.from_vscode").lazy_load({ paths = { "config/luasnip" } })
+		config = function() 
+			require('config/luasnip/snippets') 
 		end,
 	}
 

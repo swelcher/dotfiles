@@ -59,8 +59,7 @@
           "rmd"
         ],
         "path": "./snippets/markdown.json"
-      },
-      {
+      }, {
         "language": [
           "plaintex",
           "tex"
@@ -90,7 +89,6 @@
         "language": [
           "javascript",
           "javascriptreact",
-          "vue",
           "svelte"
         ],
         "path": "./snippets/javascript/javascript.json"

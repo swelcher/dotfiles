@@ -70,7 +70,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
-    config = { "\27LJ\2\n™\1\0\0\4\0\a\0\f6\0\0\0'\2\1\0B\0\2\0016\0\0\0'\2\2\0B\0\2\0029\0\3\0005\2\5\0005\3\4\0=\3\6\2B\0\2\1K\0\1\0\npaths\1\0\0\1\2\0\0\19config/luasnip\14lazy_load luasnip.loaders.from_vscode\28config/luasnip/snippets\frequire\0" },
+    config = { "\27LJ\2\n7\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\28config/luasnip/snippets\frequire\0" },
     load_after = {},
     loaded = true,
     needs_bufread = true,
@@ -127,6 +127,11 @@ _G.packer_plugins = {
     path = "/Users/swelcher/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/swelcher/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/swelcher/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
@@ -146,6 +151,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/swelcher/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/swelcher/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   undotree = {
     loaded = true,
@@ -184,7 +194,7 @@ time([[Sequenced loading]], true)
 vim.cmd [[ packadd LuaSnip ]]
 
 -- Config for: LuaSnip
-try_loadstring("\27LJ\2\n™\1\0\0\4\0\a\0\f6\0\0\0'\2\1\0B\0\2\0016\0\0\0'\2\2\0B\0\2\0029\0\3\0005\2\5\0005\3\4\0=\3\6\2B\0\2\1K\0\1\0\npaths\1\0\0\1\2\0\0\19config/luasnip\14lazy_load luasnip.loaders.from_vscode\28config/luasnip/snippets\frequire\0", "config", "LuaSnip")
+try_loadstring("\27LJ\2\n7\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\28config/luasnip/snippets\frequire\0", "config", "LuaSnip")
 
 time([[Sequenced loading]], false)
 if should_profile then save_profiles() end
