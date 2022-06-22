@@ -1,7 +1,7 @@
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use 'preservim/nerdtree'
-  use 'morhetz/gruvbox'
+	use 'morhetz/gruvbox'
 	use 'mbbill/undotree'
 	use 'vim-ruby/vim-ruby'
 	use 'junegunn/fzf'
