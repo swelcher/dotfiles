@@ -32,8 +32,8 @@ require('packer').startup(function()
 	use {
 		'L3MON4D3/LuaSnip',
 		after = 'nvim-cmp',
-		config = function() require('config/luasnip/snippets') 
-			require("luasnip.loaders.from_vscode").lazy_load({ paths = { "config/luasnip" } })
+		config = function() 
+			require('config/luasnip/custom_snippets') 
 		end,
 	}
 
