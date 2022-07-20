@@ -53,7 +53,7 @@ cmp.setup({
 
     snippet = {
         expand = function(args)
-            local luasnip = prequire("luasnip.snippet")
+            local luasnip = prequire("snippets.luasnip")
             if not luasnip then
                 return
             end
