@@ -18,6 +18,8 @@ vim.o.colorcolumn=150
 vim.o.undodir = vim.fn.stdpath('config') .. '/undodir'
 vim.o.undofile = true
 vim.o.autochdir = true
+vim.o.relativenumber = true
+vim.o.number = true
 
 vim.go.hlsearch = false 
 vim.go.ruler = true
