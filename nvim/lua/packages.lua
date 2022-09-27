@@ -18,6 +18,26 @@ require('packer').startup(function()
 	use 'rafamadriz/friendly-snippets'
 	use 'nvim-lua/plenary.nvim'
 	use 'ThePrimeagen/harpoon'
+	use 'fatih/vim-go'
+	use {
+      'kylechui/nvim-surround',
+      config = function()
+        require('nvim-surround').setup()
+      end,
+    }
+	use {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate',
+      config = function()
+        require 'config.treesitter'
+      end,
+      requires = {
+        'windwp/nvim-ts-autotag', -- Automatically end & rename tags
+        -- Dynamically set commentstring based on cursor location in file
+        'JoosepAlviste/nvim-ts-context-commentstring',
+        'nvim-treesitter/playground',
+      },
+    }
 	use {
 		'hrsh7th/nvim-cmp',
 		config = function() require('config/cmp') end,
@@ -32,6 +52,6 @@ require('packer').startup(function()
 		end,
 	}
 
-
 end)
+
 

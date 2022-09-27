@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+XDG_CONFIG_HOME="$HOME/.config"
+
+if [[ ! -d $XDG_CONFIG_HOME ]]
+then
+	mkdir $XDG_CONFIG_HOME
+fi
+
+if [[ -d $XDG_CONFIG_HOME ]]
+then
+	 /bin/cp -Rf ./nvim $XDG_CONFIG_HOME
+	 #nvim --headless -c 'PackerSync'
+fi
+
