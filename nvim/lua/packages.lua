@@ -1,3 +1,7 @@
+-- Credit to https://github.com/tjdevries 
+-- https://github.com/hrsh7th
+-- https://github.com/rafamadriz
+
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use 'preservim/nerdtree'
@@ -44,11 +48,12 @@ require('packer').startup(function()
 
 	}
 	use 'saadparwaiz1/cmp_luasnip'
+
 	use {
 		'L3MON4D3/LuaSnip',
 		after = 'nvim-cmp',
 		config = function() 
-			require('config/luasnip/snippets') 
+			require('config/luasnip/custom_snippets') 
 		end,
 	}
 

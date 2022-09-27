@@ -21,7 +21,6 @@ vim.o.autochdir = true
 vim.o.relativenumber = true
 vim.o.number = true
 
-
 vim.go.hlsearch = false 
 vim.go.ruler = true
 vim.go.cmdheight = 2
@@ -29,3 +28,4 @@ vim.go.ttimeout = 200
 vim.go.ttimeoutlen = 200
 
 vim.g.mapleader = " "
+
