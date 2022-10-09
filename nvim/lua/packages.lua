@@ -48,7 +48,7 @@ require('packer').startup(function()
 		'L3MON4D3/LuaSnip',
 		after = 'nvim-cmp',
 		config = function() 
-			require('config/luasnip/snippets') 
+			require('config/luasnip/custom_snippets') 
 		end,
 	}
 

@@ -2,7 +2,7 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = false
-vim.o.swapfile = false 
+vim.o.swapfile = false
 
 vim.o.hidden = true
 vim.o.wildmenu = true
@@ -20,7 +20,6 @@ vim.o.undofile = true
 vim.o.autochdir = true
 vim.o.relativenumber = true
 vim.o.number = true
-
 
 vim.go.hlsearch = false 
 vim.go.ruler = true
