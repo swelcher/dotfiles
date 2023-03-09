@@ -48,4 +48,3 @@ local stl = {
 
 vim.o.statusline = table.concat(stl)
 
-

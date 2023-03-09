@@ -9,4 +9,3 @@ keymap('n', '<leader>g', ':G', opts)
 keymap('n', '<leader>p', ':pu<CR>', opts)
 keymap('n', '<leader>b', ':Git blame<CR>', opts)
 
-

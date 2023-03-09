@@ -30,6 +30,3 @@ end)
 
 require'lspconfig'.pyright.setup{}
 require("mason").setup()
-
-
-
