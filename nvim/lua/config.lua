@@ -28,3 +28,5 @@ vim.go.ttimeout = 200
 vim.go.ttimeoutlen = 200
 
 vim.g.mapleader = " "
+
+vim.o.updatetime=100
