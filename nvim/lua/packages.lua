@@ -10,6 +10,7 @@ require('packer').startup(function()
 	use 'nvim-lua/plenary.nvim'
 	use 'ThePrimeagen/harpoon'
 	use 'fatih/vim-go'
+	-- May need to run a few times
 	use {
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate',
