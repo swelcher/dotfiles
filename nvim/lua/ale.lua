@@ -1,4 +1,6 @@
 vim.g.ale_fixers = {
+	css = { 'prettier' },
+	html = { 'prettier' },
 	lua = { 'luafmt' },
 	json = { 'prettier' },
 	python = { 'black', 'isort' },

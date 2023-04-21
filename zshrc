@@ -28,6 +28,8 @@ alias gd="git checkout --"
 alias gcm="git checkout master"
 alias gco="git checkout "
 alias gl="git pull"
+alias tmns="tmux new-session"
+alias tmls="tmux ls"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform

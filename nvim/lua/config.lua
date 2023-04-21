@@ -30,3 +30,5 @@ vim.go.ttimeoutlen = 200
 vim.g.mapleader = " "
 
 vim.o.updatetime=100
+
+vim.api.nvim_create_autocmd("BufEnter", {command = "autocmd FileType nerdtree setlocal relativenumber"})
