@@ -32,3 +32,10 @@ vim.g.mapleader = " "
 vim.o.updatetime=100
 
 vim.api.nvim_create_autocmd("BufEnter", {command = "autocmd FileType nerdtree setlocal relativenumber"})
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+	pattern = {"*.tf", "*.tfvars"}, 
+	callback = function()
+		vim.lsp.buf.format()
+  end
+})
