@@ -43,8 +43,6 @@ require('nvim-treesitter.configs').setup {
     'rust',
     'scss',
     'svelte',
-    'tsx',
-    'typescript',
     'vim',
     'yaml',
   },

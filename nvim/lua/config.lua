@@ -1,3 +1,8 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+vim.opt.termguicolors = true
+
 vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
@@ -26,12 +31,11 @@ vim.go.ruler = true
 vim.go.cmdheight = 2
 vim.go.ttimeout = 200
 vim.go.ttimeoutlen = 200
+vim.go.splitright = true
 
 vim.g.mapleader = " "
 
 vim.o.updatetime=100
-
-vim.api.nvim_create_autocmd("BufEnter", {command = "autocmd FileType nerdtree setlocal relativenumber"})
 
 vim.api.nvim_create_autocmd({"BufWritePre"}, {
 	pattern = {"*.tf", "*.tfvars"}, 

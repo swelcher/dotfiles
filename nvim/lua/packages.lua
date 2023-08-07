@@ -1,6 +1,5 @@
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
-	use 'preservim/nerdtree'
 	use 'morhetz/gruvbox'
 	use 'junegunn/fzf'
 	use 'junegunn/fzf.vim'
@@ -8,7 +7,33 @@ require('packer').startup(function()
 	use 'dense-analysis/ale'
 	use "onsails/lspkind-nvim"
 	use 'nvim-lua/plenary.nvim'
-	use 'ThePrimeagen/harpoon'
+	use {'ThePrimeagen/harpoon',
+		global_settings = {
+			-- sets the marks upon calling `toggle` on the ui, instead of require `:w`.
+    save_on_toggle = true,
+
+    -- saves the harpoon file upon every change. disabling is unrecommended.
+    save_on_change = true,
+
+    -- sets harpoon to run the command immediately as it's passed to the terminal when calling `sendCommand`.
+    enter_on_sendcmd = false,
+
+    -- closes any tmux windows harpoon that harpoon creates when you close Neovim.
+    tmux_autoclose_windows = false,
+
+    -- filetypes that you want to prevent from adding to the harpoon list menu.
+    excluded_filetypes = { "harpoon" },
+
+    -- set marks specific to each git branch inside git repository
+    mark_branch = false,
+
+    -- enable tabline with harpoon marks
+    tabline = false,
+    tabline_prefix = "   ",
+    tabline_suffix = "   ",
+		}
+	}
+	use { 'nvim-telescope/telescope.nvim', tag = '0.1.2' } 
 	use 'fatih/vim-go'
 	-- May need to run a few times
 	use {
@@ -25,14 +50,21 @@ require('packer').startup(function()
       },
     }
 	use 'neovim/nvim-lspconfig'
-	use "williamboman/mason.nvim"
+	use 'williamboman/mason.nvim'
+
+	use 'nvim-tree/nvim-tree.lua'
+
+	use 'nvim-tree/nvim-web-devicons'
+	-- using packer.nvim
+	use {'akinsho/bufferline.nvim', tag = "*"}
 
 end)
-
 require'lspconfig'.pyright.setup{}
 require("mason").setup()
 
 require'lspconfig'.terraformls.setup{}
 
 require'lspconfig'.tflint.setup{}
+
+require("bufferline").setup{}
 
