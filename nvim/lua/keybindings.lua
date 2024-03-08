@@ -16,4 +16,5 @@ keymap('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
 keymap('n', '<leader>v', ':vert sb', opts)
 keymap('n', '<leader>k', ':BufferLineCycleNext<CR>', opts)
 keymap('n', '<leader>j', ':BufferLineCyclePrev<CR>', opts)
-
+keymap('n', '<leader>e', ':VimuxRunCommand("Rscript " . bufname("%"))<CR>', opts)
+keymap('n', '<leader>x', ':VimuxRunCommand("")<CR>', opts)

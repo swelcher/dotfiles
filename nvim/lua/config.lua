@@ -37,6 +37,8 @@ vim.g.mapleader = " "
 
 vim.o.updatetime=100
 
+vim.api.nvim_set_hl(0, 'NormalFloat', {fg = LightGrey})
+
 vim.api.nvim_create_autocmd({"BufWritePre"}, {
 	pattern = {"*.tf", "*.tfvars"}, 
 	callback = function()

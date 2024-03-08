@@ -7,6 +7,7 @@ require('packer').startup(function()
 	use 'dense-analysis/ale'
 	use "onsails/lspkind-nvim"
 	use 'nvim-lua/plenary.nvim'
+	use 'preservim/vimux'
 	use {'ThePrimeagen/harpoon',
 		global_settings = {
 			-- sets the marks upon calling `toggle` on the ui, instead of require `:w`.
@@ -45,26 +46,34 @@ require('packer').startup(function()
       requires = {
         'windwp/nvim-ts-autotag', -- Automatically end & rename tags
         -- Dynamically set commentstring based on cursor location in file
-        'JoosepAlviste/nvim-ts-context-commentstring',
         'nvim-treesitter/playground',
       },
     }
+
 	use 'neovim/nvim-lspconfig'
+
 	use 'williamboman/mason.nvim'
+
+	use "williamboman/mason-lspconfig.nvim"
 
 	use 'nvim-tree/nvim-tree.lua'
 
 	use 'nvim-tree/nvim-web-devicons'
-	-- using packer.nvim
+
 	use {'akinsho/bufferline.nvim', tag = "*"}
 
+	use 'hrsh7th/nvim-cmp'
+
+	use 'hrsh7th/cmp-nvim-lsp'
+
+	use 'hrsh7th/cmp-buffer'
+
+	use 'hrsh7th/cmp-path'
+
+	use 'hrsh7th/cmp-cmdline'
+
 end)
-require'lspconfig'.pyright.setup{}
-require("mason").setup()
-
-require'lspconfig'.terraformls.setup{}
-
-require'lspconfig'.tflint.setup{}
 
 require("bufferline").setup{}
+
 

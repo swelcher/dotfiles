@@ -2,6 +2,7 @@ vim.g.ale_fixers = {
 	css = { 'prettier' },
 	html = { 'prettier' },
 	lua = { 'luafmt' },
+	javascript = {'prettier'},
 	json = { 'prettier' },
 	python = { 'black', 'isort' },
 	ruby = { 'rubocop' },
