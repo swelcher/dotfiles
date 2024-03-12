@@ -7,6 +7,10 @@ require('packer').startup(function()
 	use 'dense-analysis/ale'
 	use "onsails/lspkind-nvim"
 	use 'nvim-lua/plenary.nvim'
+	use "kevinhwang91/promise-async"
+	use {'kevinhwang91/nvim-ufo',
+		dependencies = "kevinhwang91/promise-async",
+	}
 	use 'preservim/vimux'
 	use {'ThePrimeagen/harpoon',
 		global_settings = {

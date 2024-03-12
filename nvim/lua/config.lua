@@ -1,6 +1,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.cmd('highlight Pmenu ctermbg=darkgray ctermfg=white guibg=#333333 guifg=white')
+
 vim.opt.termguicolors = true
 
 vim.o.tabstop = 2
