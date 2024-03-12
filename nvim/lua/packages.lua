@@ -60,6 +60,7 @@ require('packer').startup(function()
 
 	use "williamboman/mason-lspconfig.nvim"
 
+	-- Set Fonts! https://www.nerdfonts.com/font-downloads
 	use 'nvim-tree/nvim-tree.lua'
 
 	use 'nvim-tree/nvim-web-devicons'
