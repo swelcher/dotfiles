@@ -8,10 +8,16 @@ require('packer').startup(function()
 	use "onsails/lspkind-nvim"
 	use 'nvim-lua/plenary.nvim'
 	use "kevinhwang91/promise-async"
-	use {'kevinhwang91/nvim-ufo',
-		dependencies = "kevinhwang91/promise-async",
+	use "vimwiki/vimwiki"
+	use {'rcarriga/nvim-notify',
+		config = function()
+			require('notify').setup({
+				 background_colour = "#000000"
+			})
+		end
 	}
 	use 'preservim/vimux'
+	use 'airblade/vim-rooter'
 	use {'ThePrimeagen/harpoon',
 		global_settings = {
 			-- sets the marks upon calling `toggle` on the ui, instead of require `:w`.
@@ -76,8 +82,13 @@ require('packer').startup(function()
 
 	use 'hrsh7th/cmp-cmdline'
 
-end)
+	use '~/Documents/github/RunTests-nvim/'
 
+	-- Experimental
+	
+	use 'andymass/vim-matchup'
+
+end)
 require("bufferline").setup{}
 
 

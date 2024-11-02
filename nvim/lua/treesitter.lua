@@ -30,9 +30,9 @@ require('nvim-treesitter.configs').setup {
     'jsdoc',
     'json',
     'lua',
+		'luadoc',
     'markdown',
     'markdown_inline',
-    'php',
     'python',
     'query',
     'ruby',
@@ -40,6 +40,7 @@ require('nvim-treesitter.configs').setup {
     'scss',
     'svelte',
     'vim',
+		'vimdoc',
     'yaml',
   },
 }
