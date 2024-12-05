@@ -6,7 +6,7 @@ if (not status) then
 end
 
 local status2, lspconfig = pcall(require, 'mason-lspconfig')
-if (not status2) then 
+if (not status2) then
 	vim.notify("problem with mason-lspconfig")
 	return
 end

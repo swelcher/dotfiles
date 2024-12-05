@@ -4,7 +4,6 @@ require('packer').startup(function()
 	use 'junegunn/fzf'
 	use 'junegunn/fzf.vim'
 	use 'airblade/vim-gitgutter'
-	use 'dense-analysis/ale'
 	use "onsails/lspkind-nvim"
 	use 'nvim-lua/plenary.nvim'
 	use "kevinhwang91/promise-async"
